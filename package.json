@@ -1,0 +1,52 @@
+{
+  "name": "prometheus-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Prometheus - Query metrics, targets, alerts, and more",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "prometheus-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "prometheus",
+    "metrics",
+    "monitoring",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "observability"
+  ],
+  "author": "Nof Yonany",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elad-nofy/prometheus-mcp"
+  },
+  "bugs": {
+    "url": "https://github.com/elad-nofy/prometheus-mcp/issues"
+  },
+  "homepage": "https://github.com/elad-nofy/prometheus-mcp#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "axios": "^1.7.9",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.25.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
