@@ -20,7 +20,7 @@ A **READ-ONLY** MCP (Model Context Protocol) server that connects AI assistants 
 ### Option 1: npm (Recommended)
 
 ```bash
-npx prometheus-mcp@latest
+npx @elad-nofy/prometheus-mcp@latest
 ```
 
 ### Option 2: Clone and Build
@@ -46,7 +46,7 @@ Add to your global settings (`~/.claude.json` on macOS/Linux, `%USERPROFILE%\.cl
   "mcpServers": {
     "prometheus": {
       "command": "cmd",
-      "args": ["/c", "npx", "prometheus-mcp"],
+      "args": ["/c", "npx", "@elad-nofy/prometheus-mcp"],
       "env": {
         "PROMETHEUS_URL": "http://your-prometheus-server:9090"
       }
@@ -61,7 +61,7 @@ Add to your global settings (`~/.claude.json` on macOS/Linux, `%USERPROFILE%\.cl
   "mcpServers": {
     "prometheus": {
       "command": "npx",
-      "args": ["prometheus-mcp"],
+      "args": ["@elad-nofy/prometheus-mcp"],
       "env": {
         "PROMETHEUS_URL": "http://your-prometheus-server:9090"
       }
@@ -79,7 +79,7 @@ Add to `%USERPROFILE%\.aws\amazonq\agents\mcp.json`:
   "mcpServers": {
     "prometheus": {
       "command": "cmd",
-      "args": ["/c", "npx", "prometheus-mcp"],
+      "args": ["/c", "npx", "@elad-nofy/prometheus-mcp"],
       "env": {
         "PROMETHEUS_URL": "http://your-prometheus-server:9090"
       }
